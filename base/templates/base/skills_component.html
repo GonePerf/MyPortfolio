@@ -1,0 +1,35 @@
+{% load static %}
+<div class="skills-container light-theme">
+    {% if skill_count == 0 %}
+    <p>
+        Can't find skill matches to the query.
+    </p>
+    {% else %}
+
+    {% for skill in skills %}
+    <div class="skill-container">
+        <div class="skill-information">
+            <img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png">
+            <div class="skill-checkout">
+                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png"><a href="{% url 'skill' skill.id %}"> {{ skill.name }} </a></h3>
+                <p>{{ skill.description }}</p>
+            </div>
+        </div>
+        {% comment %} <small>{{ skill.topic.name }}</small> {% endcomment %}
+        <hr>
+        {% if request.user == skill.host %}
+        <div class="skill-actions">
+            <a href="{% url 'user-profile' user.id %}">@{{ skill.host.username }}</a>
+            <div>
+                <a href="{% url 'update-skill' skill.id %}">Edit</a>
+                <a href="{% url 'delete-skill' skill.id %}">Delete</a>
+            </div>
+        </div>
+        
+
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    {% endif %}
+</div>

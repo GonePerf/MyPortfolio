@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="home-container light-theme">
+
+    <div>
+        {% include 'menu.html' %}
+    </div>
+
+    <div>
+        <div class="panel-container">
+            {% comment %} <a href="{% url 'create-skill' %}"> + ADD NEW SKILL</a> {% endcomment %}
+            <h5><strong>&rsaquo;</strong> ABOUT ME</h5>
+        </div>
+        <div class="about-container">
+            <div class="about-image"></div>
+            <p>with a strong focus on the concept of application development rather than the technologies used to do so. My passion for programming started at a young age and I have been continuously developing my skills since then. I have a deep understanding of software development concepts and have worked with various languages, frameworks, and tools.</p>
+        </div>
+        {% comment %} {% include 'base/skills_component.html' %} {% endcomment %}
+    </div>
+
+    {% comment %} <div>
+        {% include 'base/activity_component.html' %}
+    </div> {% endcomment %}
+
+</div>
+
+{% endblock content %}

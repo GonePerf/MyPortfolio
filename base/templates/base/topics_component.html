@@ -1,0 +1,18 @@
+{% load static %}
+<div class="stack-items-container">
+    <h5>TECH STACK</h5>
+    <hr>
+    <ul class='stack-items-list'>
+        <li {% if request.GET.q == None %} class="active" {% endif %}>
+            <img src="{% static 'images/techs/all.svg' %}"><a href="{% url 'home' %}">ALL</a>
+        </li>
+        {% for topic in topics  %}
+        <li {% if request.GET.q == topic.name %} class="active" {% endif %}>
+            <img src="{% static 'images/techs/' %}{{ topic.name | lower }}.svg">&nbsp;<a href="{% url 'home' %}?q={{topic.name}}">{{ topic.name | upper }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    
+</div>
+ 

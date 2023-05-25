@@ -1,0 +1,77 @@
+.skills-container {
+    padding: 30px;
+    max-height: calc(94vh - 50px);
+    overflow: scroll;
+    scrollbar-width: none;
+    @media(max-width: 868px) {
+        padding: 5px;
+    }
+    .skill-container {
+        // border-radius: 15px;
+        background: rgba(white, 0.6);
+        border-left: 5px solid black;
+        border-bottom: 5px solid white;
+        transition: .2s;
+        cursor: pointer;
+        padding: 5px 15px;
+        margin: 10px;
+        @media(max-width: 868px) {
+            border-left: 2px solid black;
+        }
+        .skill-information {
+            display: flex;
+            align-items: center;
+            img {
+                width: 100px;
+                @media(max-width: 1100px) {
+                    width: 70px;
+                }
+                @media(max-width: 868px) {
+                    display: none;
+                }
+            }
+            .skill-checkout {
+                margin-left: 25px;
+                @media(max-width: 868px) {
+                    margin-left: 0;
+                }
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 10px;
+                        display: none;
+                        @media(max-width: 868px) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .skill-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            > a {
+                font-size: 10px;
+            }
+        }
+    }
+    .skill-container:hover {
+        background-color: white;
+    }
+}
+.skills-container::-webkit-scrollbar {
+    display: none;
+}
+#dark-theme .skills-container {
+    .skill-container {
+        background: rgba($dark-navbar-color, 0.6);
+        border-left: 5px solid white;
+        border-bottom: 5px solid $dark-navbar-color;
+
+    }
+    .skill-container:hover {
+        background: $dark-navbar-color;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
+    <title>My Tech-Stack</title>
+</head>
+<body>
+    <div id="light-theme">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="content-container">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        {% include 'footer.html' %}
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

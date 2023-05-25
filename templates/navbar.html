@@ -1,0 +1,35 @@
+{% load static %}
+<div class="navbar-container" id="navbar-container">
+    <div class="my-logo">
+        <fieldset>
+            {% comment %} <legend>Web Devaloper</legend> {% endcomment %}
+            <div class="my-avatar"></div>
+            <strong>WEB DEVELOPMENT</strong>
+        </fieldset>
+    </div>
+    
+    <div class="user-information">
+        {% if request.user.is_authenticated %}
+        <div>
+            <p>@{{ request.user }}</p>
+            {% comment %} <a class="logout-button" href="{% url 'logout' %}">Logout</a> {% endcomment %}
+            &nbsp;<strong>&rsaquo;</strong>
+        </div>
+        
+        {% else %}
+        
+        {% comment %} <a href="{% url 'login' %}">Login</a> {% endcomment %}
+        
+        {% endif %}
+        
+        <label id="theme-icon">
+            <input id="slider" type="checkbox" onclick="changeTheme()" />
+            <span class="slider round"></span>
+        </label>
+        <label id="language-icon">
+            <input id="slider-language" type="checkbox" onclick="changeLamguage()" />
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+</div>
