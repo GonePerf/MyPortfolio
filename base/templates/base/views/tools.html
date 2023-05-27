@@ -1,21 +1,20 @@
 {% extends 'main.html' %}
-
+{% load i18n %}
 {% block content %}
 
 <div class="home-container light-theme">
-
     <div>
         {% include 'menu.html' %}
     </div>
-
+    {% translate 'TOOLS' as tools %}
     <div>
         <div class="panel-container">
             {% comment %} <a href="{% url 'create-skill' %}"> + ADD NEW SKILL</a> {% endcomment %}
-            <h5><strong>&rsaquo;</strong> MY PROJECTS</h5>
+            <h5><strong>&rsaquo;</strong> {{ tools }}</h5>
         </div>
 
         <div class="terminal-search">
-            <form method="GET" action="{% url 'home' %}">
+            <form method="GET" action="{% url 'tools' %}">
                 <label>
                     {% comment %} <strong>root@localhost:~$ </strong> {% endcomment %}
                     <input type="text" autocomplete="off" name ="q" placeholder="Search.." />
@@ -24,7 +23,7 @@
             </form>
         </div>
         
-        {% include 'base/skills_component.html' %}
+        {% include 'base/components/items_container.html' %}
     </div>
 
     {% comment %} <div>

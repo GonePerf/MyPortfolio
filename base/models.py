@@ -8,7 +8,7 @@ class Topic(models.Model):
     def __str__(self):
         return self.name
 
-class Skill(models.Model):
+class Tool(models.Model):
     host = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200)
@@ -39,7 +39,7 @@ class Project(models.Model):
 # ONE ROOM HAS MANY MESSAGES    
 class Message(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    skill = models.ForeignKey(Skill, on_delete=models.CASCADE)
+    tool = models.ForeignKey(Tool, on_delete=models.CASCADE)
     body = models.TextField()
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)

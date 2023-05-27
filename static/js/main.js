@@ -11,11 +11,9 @@ window.onload = function() {
        changeTheme(themeData.contentContainerId) 
     }
 };
-const changeLamguage = () => {
-    setTimeout(() => {
-        alert('The Polish language will be available soon.');
-        document.getElementById('slider-language').checked = false;
-    }, 500)
+const changeLanguage = (context) => {
+    context.language = document.getElementById('slider-language').checked ? 'pl' : 'en'
+    context.submit()
 }
 const changeTheme = (contentContainerId) => {
     const data = {};

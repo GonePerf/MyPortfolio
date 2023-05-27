@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <div class="navbar-container" id="navbar-container">
     <div class="my-logo">
         <fieldset>
@@ -26,10 +27,21 @@
             <input id="slider" type="checkbox" onclick="changeTheme()" />
             <span class="slider round"></span>
         </label>
-        <label id="language-icon">
-            <input id="slider-language" type="checkbox" onclick="changeLamguage()" />
-            <span class="slider round"></span>
-        </label>
+        {% get_current_language_bidi as LANGUAGE_BIDI %}
+        {% get_current_language as LANGUAGE_CODE %}
+        <form class="change-language" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.path }}">
+            <select name="language" onchange="this.form.submit()">
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                
+                {% for language in languages %}
+                    <option class="{{ language.code }}" value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {%endif%}>
+                        {{ language.code | upper }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
     </div>
     
 </div>

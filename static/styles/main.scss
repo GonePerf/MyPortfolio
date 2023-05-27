@@ -29,9 +29,10 @@ body {
     text-decoration: none;
     color: $secondary-dark-theme-color;
 }
-@import './navbar';
-@import './home';
-@import './menu_component';
-@import './activity_component';
-@import './skill-component';
-@import './footer';
+@import './components/navbar';
+@import './views/home';
+@import './views/login_register';
+@import './components/menu_component';
+@import './components/activity_component';
+@import './components/items_container';
+@import './components/footer';

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-27 17:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
+"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: .\templates\menu.html:7
+msgid "ABOUT ME"
+msgstr "O MNIE"
+#: .\templates\menu.html:7
+msgid "TOOLS"
+msgstr "NARZĘDZIA"
+#: .\templates\menu.html:7
+msgid "MY PROJECTS"
+msgstr "PROJEKTY"
+#: .\templates\menu.html:7
+msgid "INTRO"
+msgstr "Sukpiam się na koncepcji rozwoju aplikacji, a nie technologiach z których jest zbudowana. Moja pasja do programowania rozpoczęła się w młodym wieku i od tego czasu stale rozwijam swoje umiejętności. Rozumiem różne koncepcje tworzenia aplikacji, pracowałem z różnymi językami, frameworkami i narzędziami."
+#: .\templates\menu.html:7
+msgid "Elasticsearch"
+msgstr "Mam praktyczne doświadczenie z Elasticsearch, zdobyte głównie dzięki pracy w OPGK. W trzyosobowym zespole zaprojektowaliśmy i zaimplementowaliśmy paczkę rozszerzającą OTRS o Elasticsearch’a ze względu na małą efektywność SQL’a. Nasz moduł działa równolegle z bazą MySQL a dzięki wykorzystaniu odpowiedniego mechanizmu wywołującego określone akcje np. w trakcie dodawania nowego zgłoszenia, dane w Elasticsearch’u są na bieżąco automatycznie aktualizowane."
+#: .\templates\menu.html:7
+msgid "Vue"
+msgstr "Pierwszy raz z Vue spotkałem się 2 lata temu na praktykach w firmie Ideo. Ten framework od razu przypadł mi do gustu i zamierzam z niego korzystać. Mam praktyczne doświadczenie z Vue.js 2.0. Dzięki Vue 2.0 mogę tworzyć dynamiczne i interaktywne aplikacje internetowe przy użyciu architektury opartej na komponentach, reaktywnego wiązania danych, routingu itp. Jestem zaznajomiony z Vue.js 3.0, najnowszą wersją Vue.js. Vue 3.0 wprowadza kilka ulepszeń, w tym szybszy silnik renderujący, lepszą obsługę TypeScript i ulepszoną reaktywność dzięki Composition API."
+#: .\templates\menu.html:7
+msgid "DJango"
+msgstr "Lubię Pythona bo ma bardzo prostą składnię. DJango używam od jakiegoś miesiąca. Tę stronę napisałem za pomocą właśnie DJango - SSR ma to do siebie, że przesyła do użytkownika gotowe dokumenty HTML dlatego postanowiłem nie korzystać tutaj z Vue. Aplikacja posiada bazę danych SQLite i mogę edytować opis każdej technologii  czy projektu w dowolnej chwili a także dodawać nowe elementy."
+#: .\templates\menu.html:7
+msgid "Git"
+msgstr "Biegle posługuję się Git'em, systemem kontroli wersji, do zarządzania kodem źródłowym aplikacji i śledzenia zmian w projektach. Dodatkowo, posiadam doświadczenie w posługiwaniu się wierszem poleceń, potrafię zarządzać repozytorium z poziomu terminala. Dzięki mojej znajomości Git'a mogę efektywnie współpracować przy projektach i zapewnić dobrą pracę zespołową."
+#: .\templates\menu.html:7
+msgid "MySQL"
+msgstr "Posiadam dużą wiedzę o MySQL i duże doświadczenie w tworzeniu efektywnych zapytań do baz danych. Dzięki solidnemu zrozumieniu składni SQL i zasad projektowania baz danych, mogę efektywnie tworzyć zapytania w celu pobierania danych, manipulowania nimi i zarządzania nimi. Niezależnie od tego, czy chodzi o konstruowanie złożonych złączeń, optymalizację zapytań pod kątem wydajności, czy też wdrażanie filtrowania i sortowania danych, wykorzystuję możliwości MySQL, aby zapewnić wydajne i niezawodne operacje na danych."
+#: .\templates\menu.html:7
+msgid "Terminal"
+msgstr "Dobrze znam interfejsy wiersza poleceń w systemach Linux i Windows. Dzięki doświadczeniu w językach skryptowych, takich jak Bash, potrafię opracowywać wydajne skrypty automatyzacji w celu usprawnienia procesów, zwiększenia produktywności i zminimalizowania ręcznego wysiłku."
+#: .\templates\menu.html:7
+msgid "pl"
+msgstr "/pl/"
+#: .\templates\menu.html:7
+msgid "en"
+msgstr "/en/"
+#: .\templates\menu.html:7
+msgid "Docker"
+msgstr "Potrafię korzystać z konteneryzacji, uruchamiałem kontenery z różnymi aplikacjami, konfigurowałem kontenery z środowiskami klientów. Potrafię korzystać z Portainera, a także zarządzać kontenerami z poziomu terminala. Potrafię zbindować odpowiednie katalogi na hosta umożliwiając łatwą pracę na plikach."
+#: .\templates\menu.html:7
+msgid "More"
+msgstr "Lista zawiera jedynie niektóre narzędzia z których miałem okazję korzystać. Posiadam szeroką wiedzę z zakresu algorytmów, programowania obiektowego i funkcyjnego, SSR i SPA."

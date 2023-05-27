@@ -1,25 +1,35 @@
 {% load static %}
+{% load i18n %}
 <div class="menu-items-container">
+    {% translate 'ABOUT ME' as about %}
+    {% translate 'TOOLS' as tools %}
+    {% translate 'MY PROJECTS' as projects %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% translate LANGUAGE_CODE as lang %}
     {% include 'navbar.html' %}
     <ul class='stack-items-list'>
-        <li {% if request.path == '/' %}class="active"{% endif %}>
-            <a class="text-link" href="{% url 'home' %}">ABOUT ME</a>
+        
+        <li {% if request.path == lang %}class="active"{% endif %}>
+            
+            <a class="text-link" href="{% url 'home' %}">{{ about }}</a>
             <a href="{% url 'home' %}"><div class="menu-item-about"></div></a>
         </li>
-        <li {% if request.path == '/technologies' %}class="active"{% endif %}>
-            <a class="text-link" href="{% url 'technologies' %}">TECHNOLOGIES</a>
-            <a href="{% url 'technologies' %}"><div class="menu-item-technologies"></div></a>
+        <li {% if  'tools' in request.path %}class="active"{% endif %}>
+            
+            <a class="text-link" href="{% url 'tools' %}">{{ tools }}</a>
+            <a href="{% url 'tools' %}"><div class="menu-item-technologies"></div></a>
         </li>
-        <li {% if request.path == '/projects' %}class="active"{% endif %}>
-            <a class="text-link" href="{% url 'projects' %}">MY PROJECTS</a>
+        <li {% if 'projects' in request.path %}class="active"{% endif %}>
+            
+            <a class="text-link" href="{% url 'projects' %}">{{ projects }}</a>
             <a href="{% url 'projects' %}"><div class="menu-item-projects"></div></a>
         </li>
         
     </ul>
     <div class="my-other-profiles">
-        <a href="#"><img src="{% static 'images/menu/yt.png' %}"></a>
-        <a href="#"><img src="{% static 'images/menu/in.png' %}"></a>
-        <a href="#"><img src="{% static 'images/menu/git.png' %}"></a>
+        <a href="https://github.com/GonePerf" target="_blanc"><img src="{% static 'images/menu/git.png' %}"></a>
+        <a href="https://www.linkedin.com/in/konrad-gumienny-295412199/" target="_blanc"><img src="{% static 'images/menu/in.png' %}"></a>
+        <a href="https://www.youtube.com/channel/UCG36NqoPzdd9GkmMiSUFA4g" target="_blanc"><img src="{% static 'images/menu/yt.png' %}"></a>        
     </div>
     
 </div>

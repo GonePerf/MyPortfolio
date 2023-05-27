@@ -1,8 +1,8 @@
 from django.forms import ModelForm
-from .models import Skill
+from .models import Tool
 
-class SkillForm(ModelForm):
+class ToolForm(ModelForm):
     class Meta:
-        model = Skill
+        model = Tool
         fields = '__all__'
         exclude = [ 'host', 'participants' ]

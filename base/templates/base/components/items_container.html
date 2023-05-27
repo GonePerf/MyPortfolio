@@ -1,0 +1,56 @@
+{% load static %}
+{% load i18n %}
+<div class="tools-container">
+    {% if skill_count == 0 %}
+    <p>
+        Can't find skill matches to the query.
+    </p>
+    {% else %}
+
+    {% for skill in skills %}
+    {% translate skill.name as desc %}
+
+    <div class="tool-container">
+        <div class="tool-information">
+            <img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png">
+            <div class="tool-checkout">
+                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png"><a href="{% url 'tool' skill.id %}"> {{ skill.name }} </a></h3>
+                <p>{{ desc}}</p>
+            </div>
+        </div>
+        {% comment %} <small>{{ skill.topic.name }}</small> {% endcomment %}
+        <hr>
+        
+        {% if request.user == skill.host %}
+        <div class="tool-actions">
+            <a href="{% url 'user-profile' user.id %}">@{{ skill.host.username }}</a>
+            <div>
+                <div class="edit">
+                    <img src="{% static 'images/theme/edit.png' %}" />
+                    <a class="edit" href="{% url 'update-tool' skill.id %}">Edit</a>
+                </div>
+                <div>
+                    <img src="{% static 'images/theme/delete.png' %}" />
+                    <a href="{% url 'delete-tool' skill.id %}">Delete</a>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        
+        <div class="no-admin-user">
+            <a href="#">@{{ skill.host.username }}</a>
+            <div class="stars-container">
+                <div class="star star-1"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+                <div class="star star-5"></div>
+            </div>
+        </div>
+
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    {% endif %}
+</div>

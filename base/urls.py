@@ -3,17 +3,16 @@ from . import views
 
 urlpatterns = [
     path('login/', views.loginPage, name="login"),
-    path('register/', views.registerUser, name="register"),
     path('logout/', views.logoutUser, name="logout"),
 
     path('', views.home, name='home'),
-    path('technologies', views.technologies, name='technologies'),
+    path('tools', views.tools, name='tools'),
     path('projects', views.projects, name='projects'),
 
-    path('skill/<str:pk>', views.skill, name='skill'),
+    path('tool/<str:pk>', views.tool, name='tool'),
     path('profile/<str:pk>', views.userProfile, name='user-profile'),
-    path('create-skill/', views.createSkill, name="create-skill"),
-    path('update-skill/<str:pk>', views.updateSkill, name="update-skill"),
-    path('delete-skill/<str:pk>', views.deleteSkill, name="delete-skill"),
-    path('delete-message/<str:pk>', views.deleteMessage, name="delete-message")
+    path('create-tool/', views.createTool, name="create-tool"),
+    path('update-tool/<str:pk>', views.updateTool, name="update-tool"),
+    path('delete-tool/<str:pk>', views.deleteTool, name="delete-tool"),
+    path('delete-message/<str:pk>', views.deleteMessage, name="delete-message"),
 ]

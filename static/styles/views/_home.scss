@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .home-container {
     .panel-container {
         height: 40px;
@@ -33,21 +34,25 @@
         margin-left: 15px;
         p {
             position: absolute;
-            font-size: 28px;
-            bottom: 30px;
+            font-size: 15px;
+            font-family: 'Press Start 2P', cursive;
+            bottom: 10px;
+            line-height: 150%;
             max-width: 600px;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-align: right;
             padding-left: 100px;
             @media(max-width: 600px) {
-                font-size: 24px;
-                padding-left: 80px;
+                font-size: 12px;
+                padding-left: 50px;
             }
             @media (max-height: 800px) {
-                font-size: 20px;
+                font-size: 11px;
             }
             @media(max-width: 450px) {
-                font-size: 18px;
-                padding-left: 20px;
+                font-size: 11px;
+                bottom: 5px;
+                padding-left: 10px;
             }
         }
         .about-image {
@@ -66,17 +71,32 @@
             @media(max-height: 700px) {
                 top: -180px;
                 left: -300px;
-                transform: scale(.5);
+                height: 135%;
+                transform: scale(.49);
             }
             @media (max-width: 680px) {
                 top: -140px;
-                left: -130px;
+                left: -200px;
                 transform: scale(0.5);
             }
             @media (max-width: 580px) {
                 top: -200px;
-                left: -200px;
+                left: -270px;
                 width: 230%;
+
+                transform: scale(0.5);
+            }
+            @media (max-width: 440px) {
+                top: -200px;
+                left: -220px;
+                width: 230%;
+
+                transform: scale(0.5);
+            }
+            @media (max-width: 380px) {
+                top: -200px;
+                left: -210px;
+                width: 250%;
 
                 transform: scale(0.5);
             }
