@@ -1,0 +1,31 @@
+.login-register {
+    max-width: 500px;
+    font-size: 24px;
+    margin: auto;
+    @media(max-width: 1100px) {
+        font-size: 18px;
+    }
+    form {
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span.helptext {
+                display: none;
+            }
+        }
+        input[type='submit'] {
+            float: right;
+            font-size: 26px;
+            @media(max-width: 1100px) {
+                font-size: 20px;
+            }
+        }
+    }
+    >p {
+        margin-top: 70px;
+    }
+    a {
+        border-bottom: 1px solid white;
+    }
+}

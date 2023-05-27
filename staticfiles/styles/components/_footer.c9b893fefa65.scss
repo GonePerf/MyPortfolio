@@ -1,0 +1,17 @@
+.footer-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    p {
+        margin: 0 auto;
+        padding-top: 5px;
+        background-color: $primary-light-theme-color;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+#dark-theme .footer-container {
+    p {
+        background-color: #222;
+    }
+}
