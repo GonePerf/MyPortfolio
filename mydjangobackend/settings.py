@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_=0tzmd!sgorfvma0p545_5mv-ss$zee(v@vpgoedym9j19*t#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.100.111', 'localhost', '127.0.0.1', 'cryptic-fortress-75881.herokuapp.com', 'kgdevelopment.pl', 'www.kgdevelopment.pl']
+ALLOWED_HOSTS = ['192.168.100.111', 'localhost', '127.0.0.1', 'cryptic-fortress-75881.herokuapp.com', 'kgdevelopment.pl', 'www.kgdevelopment.pl', '23.22.130.173', '107.22.57.98', '142.250.203.195', '162.19.58.159']
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
