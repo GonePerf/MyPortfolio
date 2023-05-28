@@ -104,15 +104,22 @@
     }
     .terminal-search {
         padding: 5px 15px;
-        strong {
-            color: lawngreen;
-        }
-        input {
-            background-color: transparent;
-            font-weight: bold;
-            outline: none;
-            color: $secondary-light-theme-color;
-            border: 0;
+        width: 100%;
+        form {
+            width: 100%;
+
+            label {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                background-color: transparent;
+                font-weight: bold;
+                outline: none;
+                color: $secondary-light-theme-color;
+                border: 0;
+            }
         }
     }
 }
@@ -125,9 +132,6 @@
         }
     }
     .terminal-search {
-        strong {
-            color: lawngreen;
-        }
         input {
             color: $secondary-dark-theme-color;
         }

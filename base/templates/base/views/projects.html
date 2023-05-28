@@ -13,16 +13,16 @@
             {% comment %} <a href="{% url 'create-skill' %}"> + ADD NEW SKILL</a> {% endcomment %}
             <h5><strong>&rsaquo;</strong> {{ projects }}</h5>
         </div>
-
+{% comment %} 
         <div class="terminal-search">
             <form method="GET" action="{% url 'home' %}">
-                <label>
+                <label> {% endcomment %}
                     {% comment %} <strong>root@localhost:~$ </strong> {% endcomment %}
-                    <input type="text" autocomplete="off" name ="q" placeholder="Search.." />
+                    {% comment %} <input type="text" autocomplete="off" name ="q" placeholder="Search.." /> {% endcomment %}
                     {% comment %} <b id="">|</b> {% endcomment %}
-                </label>
+                {% comment %} </label>
             </form>
-        </div>
+        </div> {% endcomment %}
         
         {% include 'base/components/items_container.html' %}
     </div>

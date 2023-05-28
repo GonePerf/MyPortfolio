@@ -20,45 +20,78 @@ msgstr ""
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: .\templates\menu.html:7
-msgid "ABOUT ME"
-msgstr "O MNIE"
-#: .\templates\menu.html:7
-msgid "TOOLS"
-msgstr "NARZĘDZIA"
-#: .\templates\menu.html:7
+#: MENU ITEMS
 msgid "MY PROJECTS"
 msgstr "PROJEKTY"
-#: .\templates\menu.html:7
+msgid "TOOLS"
+msgstr "NARZĘDZIA"
+msgid "ABOUT ME"
+msgstr "O MNIE"
+
+#: HOMEPAGE P TEXT
 msgid "INTRO"
 msgstr "Sukpiam się na koncepcji rozwoju aplikacji, a nie technologiach z których jest zbudowana. Moja pasja do programowania rozpoczęła się w młodym wieku i od tego czasu stale rozwijam swoje umiejętności. Rozumiem różne koncepcje tworzenia aplikacji, pracowałem z różnymi językami, frameworkami i narzędziami."
-#: .\templates\menu.html:7
+
+#: ELASTICSEARCH DESCRIPTION
 msgid "Elasticsearch"
 msgstr "Mam praktyczne doświadczenie z Elasticsearch, zdobyte głównie dzięki pracy w OPGK. W trzyosobowym zespole zaprojektowaliśmy i zaimplementowaliśmy paczkę rozszerzającą OTRS o Elasticsearch’a ze względu na małą efektywność SQL’a. Nasz moduł działa równolegle z bazą MySQL a dzięki wykorzystaniu odpowiedniego mechanizmu wywołującego określone akcje np. w trakcie dodawania nowego zgłoszenia, dane w Elasticsearch’u są na bieżąco automatycznie aktualizowane."
-#: .\templates\menu.html:7
+
+#: VUE DESCRIPTION
 msgid "Vue"
 msgstr "Pierwszy raz z Vue spotkałem się 2 lata temu na praktykach w firmie Ideo. Ten framework od razu przypadł mi do gustu i zamierzam z niego korzystać. Mam praktyczne doświadczenie z Vue.js 2.0. Dzięki Vue 2.0 mogę tworzyć dynamiczne i interaktywne aplikacje internetowe przy użyciu architektury opartej na komponentach, reaktywnego wiązania danych, routingu itp. Jestem zaznajomiony z Vue.js 3.0, najnowszą wersją Vue.js. Vue 3.0 wprowadza kilka ulepszeń, w tym szybszy silnik renderujący, lepszą obsługę TypeScript i ulepszoną reaktywność dzięki Composition API."
-#: .\templates\menu.html:7
+
+#: DJANGO DESCRIPTION
 msgid "DJango"
 msgstr "Lubię Pythona bo ma bardzo prostą składnię. DJango używam od jakiegoś miesiąca. Tę stronę napisałem za pomocą właśnie DJango - SSR ma to do siebie, że przesyła do użytkownika gotowe dokumenty HTML dlatego postanowiłem nie korzystać tutaj z Vue. Aplikacja posiada bazę danych SQLite i mogę edytować opis każdej technologii  czy projektu w dowolnej chwili a także dodawać nowe elementy."
-#: .\templates\menu.html:7
+
+#: GIT DESCRIPTION
 msgid "Git"
 msgstr "Biegle posługuję się Git'em, systemem kontroli wersji, do zarządzania kodem źródłowym aplikacji i śledzenia zmian w projektach. Dodatkowo, posiadam doświadczenie w posługiwaniu się wierszem poleceń, potrafię zarządzać repozytorium z poziomu terminala. Dzięki mojej znajomości Git'a mogę efektywnie współpracować przy projektach i zapewnić dobrą pracę zespołową."
-#: .\templates\menu.html:7
+
+#: MYSQL DESCRIPTION
 msgid "MySQL"
 msgstr "Posiadam dużą wiedzę o MySQL i duże doświadczenie w tworzeniu efektywnych zapytań do baz danych. Dzięki solidnemu zrozumieniu składni SQL i zasad projektowania baz danych, mogę efektywnie tworzyć zapytania w celu pobierania danych, manipulowania nimi i zarządzania nimi. Niezależnie od tego, czy chodzi o konstruowanie złożonych złączeń, optymalizację zapytań pod kątem wydajności, czy też wdrażanie filtrowania i sortowania danych, wykorzystuję możliwości MySQL, aby zapewnić wydajne i niezawodne operacje na danych."
-#: .\templates\menu.html:7
+
+#: TERMINAL DESCRIPTION
 msgid "Terminal"
 msgstr "Dobrze znam interfejsy wiersza poleceń w systemach Linux i Windows. Dzięki doświadczeniu w językach skryptowych, takich jak Bash, potrafię opracowywać wydajne skrypty automatyzacji w celu usprawnienia procesów, zwiększenia produktywności i zminimalizowania ręcznego wysiłku."
-#: .\templates\menu.html:7
+
+#: LINK HELPER
 msgid "pl"
 msgstr "/pl/"
-#: .\templates\menu.html:7
+
+#: LINK HELPER
 msgid "en"
 msgstr "/en/"
-#: .\templates\menu.html:7
+
+#: DOCKER DESCRIPTION
 msgid "Docker"
 msgstr "Potrafię korzystać z konteneryzacji, uruchamiałem kontenery z różnymi aplikacjami, konfigurowałem kontenery z środowiskami klientów. Potrafię korzystać z Portainera, a także zarządzać kontenerami z poziomu terminala. Potrafię zbindować odpowiednie katalogi na hosta umożliwiając łatwą pracę na plikach."
-#: .\templates\menu.html:7
+
+#: MORE DESCRIPTION
 msgid "More"
 msgstr "Lista zawiera jedynie niektóre narzędzia z których miałem okazję korzystać. Posiadam szeroką wiedzę z zakresu algorytmów, programowania obiektowego i funkcyjnego, SSR i SPA."
+
+#: NODEJS DESCRIPTION
+msgid "NodeJS"
+msgstr "Potrafię korzystać z NPM'a - menedżera pakietów do JS. Za jego pomocą łatwo importuję biblioteki i podłączam je do moich projektów. Poznałem Angulara i AngularaJS, ExpressJS oraz pomagałem w tworzeniu aplikacji opartej o mikroserwisy -  Hemera JS."
+
+#: SCSS DESCRIPTION
+msgid "SCSS"
+msgstr "Jeśli mogę to wykorzystuję preprocesory CSS do pracy - pozwalają one na przyjemne zagnieżdżanie bloków, dodają odpowiednie znaczniki które czyta większość przeglądarek a także można w nich deklarować zmienne. Podczas tworzenia tego portfolio korzystałem z SCSS."
+
+#: LARAVEL DESCRIPTION
+msgid "Laravel"
+msgstr "Z laravelem pierwszy raz miałem styczność na studiach, gdzie wystarczyło mi zadać kilka pytań koledze, który posiadał już dosyć zaawansowaną wiedzę i łatwo poruszał się po tym frameworku, aby stworzyć prosty backend z odpowiednimi modelami i endpointami do operacji na bazie danych. Podczas pracy w OPGK również pomagałem w implementacji Backendu do sklepu internetowego."
+
+#: FIGMA DESCRIPTION
+msgid "Figma"
+msgstr "Potrafię tworzyć proste grafiki w figmie. Dodatkowo posiadając makiety jestem w stanie dość szybko napisać implementację interfejsu graficznego strony. Wykorzystuję również FontAwesome oraz GoogleFonts w swojej pracy."
+
+#: PORTFOLIO DESCRIPTION
+msgid "Portfolio"
+msgstr "Strona internetowa napisana w DJango, posiada ona bazę danych SQLite oraz mapowanie obiektowo relacyjne. Wykorzystałem do jej zbudowania SCSS. Główne funkcjonalności to zmiana skórki na ciemną i jasną - za pomocą JS i localStorage. Aplikacja posiada dwa języki które można zmienić w lewym górnym rogu lub w linku. Jest to swego rodzaju CMS pozwalający mi na zarządzanie treścią strony bez ingerencji w jej kod - manipulując bazą danych."
+
+#: TOURON DESCRIPTION
+msgid "TourOn"
+msgstr "Wspólnie z team'em zaprojektowaliśmy aplikację umożliwiającą użytkownikom wyszukiwanie przewodników którzy mogą oprowadzić ich po określonych miejscach/miastach. Do tej aplikacji został napisany jedynie frontend za pomocą React'a. Nasz zespół - 2YellowGang zajął drugie miejsce na #Art of Product Building Hackathon!"

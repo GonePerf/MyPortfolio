@@ -20,48 +20,76 @@ msgstr ""
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: .\templates\menu.html:7
+#: MENU ITEMS
 msgid "ABOUT ME"
 msgstr "ABOUT ME"
-#: .\templates\menu.html:7
 msgid "TOOLS"
 msgstr "TOOLS"
-#: .\templates\menu.html:7
 msgid "MY PROJECTS"
 msgstr "MY PROJECTS"
-#: .\templates\menu.html:7
+
+#: HOMEPAGE P TEXT
 msgid "INTRO"
 msgstr "with a strong focus on the concept of application development rather than the technologies used to do so. My passion for programming started at a young age and I have been continuously developing my skills since then. I have a deep understanding of software development concepts and have worked with various languages, frameworks, and tools."
-#: .\templates\menu.html:7
+
+#: ELASTICSEARCH DESCRIPTION
 msgid "Elasticsearch"
 msgstr "I have practical experience with Elasticsearch, gained mainly through my work at OPGK. In a team of three, we designed and implemented a package extending OTRS with Elasticsearch due to the low efficiency of SQL. Our module works in parallel with a MySQL database and, by using the right mechanism mechanism that triggers specific actions e.g. when adding a new request, the data in the Elasticsearch data are automatically updated on an ongoing basis."
-#: .\templates\menu.html:7
+
+#: VUE DESCRIPTION
 msgid "Vue"
 msgstr "I first encountered Vue two years ago during an internship at Ideo. This framework immediately appealed to me and I intend to use it. I have hands-on experience with Vue.js 2.0. With Vue 2.0, I can create dynamic and interactive web applications using component-based architecture, reactive data binding, routing, etc. I am familiar with Vue.js 3.0, the latest version of Vue.js. Vue 3.0 introduces several improvements, including a faster rendering engine, better TypeScript support and improved responsiveness with the Composition API."
-#: .\templates\menu.html:7
+
+#: DJANGO DESCRIPTION
 msgid "DJango"
 msgstr "I like Python because it has a very simple syntax. I've been using DJango for about a month now. I wrote this page using just DJango - SSR has the advantage of sending ready-made HTML documents to the user so I decided not to use Vue here. The application has a SQLite database and I can edit the description of any technology or project at any time and also add new elements."
-#: .\templates\menu.html:7
+
+#: GIT DESCRIPTION
 msgid "Git"
 msgstr "I am proficient in using Git, a version control system, to manage source code and track changes in software projects. Additionally, I am experienced in a command-line interface tool, to execute Git commands and perform various operations efficiently. With my knowledge of Git and Git Bash, I can effectively collaborate on projects and ensure good team work."
-#: .\templates\menu.html:7
+
+#: MYSQL DESCRIPTION
 msgid "MySQL"
 msgstr "I have proficiency in MySQL and extensive experience in crafting effective database queries. With a solid understanding of SQL syntax and database design principles, I can efficiently create queries to retrieve, manipulate, and manage data. Whether it's constructing complex joins, optimizing queries for performance, or implementing data filtering and sorting, I leverage MySQL's capabilities to ensure efficient and reliable data operations."
-#: .\templates\menu.html:7
+
+#: TERMINAL DESCRIPTION
 msgid "Terminal"
 msgstr "I possess good command over command line interfaces and scripting languages, enabling me to effectively utilize terminals in Linux and Windows. With expertise in scripting languages like Bash, I develop efficient automation scripts to streamline processes, enhance productivity, and minimize manual effort."
-#: .\templates\menu.html:7
-msgid "docker"
-msgstr ""
-#: .\templates\menu.html:7
+
+#: LANGUAGE HELPERS
 msgid "pl"
 msgstr "/pl/"
-#: .\templates\menu.html:7
 msgid "en"
 msgstr "/en/"
-#: .\templates\menu.html:7
+
+#: DOCKER DESCRIPTION
 msgid "Docker"
 msgstr "I can use containerisation, I have run containers with various applications, I have configured containers with client environments. I can use Portainer and also manage containers from a terminal. I can bind the right directories to the host allowing me to work on files easily."
-#: .\templates\menu.html:7
+
+#: MORE DESCRIPTION
 msgid "More"
 msgstr "The list includes only some of the tools I have had the opportunity to use. I have extensive knowledge of algorithms, object-oriented and functional programming, SSR and SPA."
+
+#: NODEJS DESCRIPTION
+msgid "NodeJS"
+msgstr "I can use NPM, the package manager for JS. I use it to easily import libraries and connect them to my projects. I have learnt about Angular and AngularJS, ExpressJS and helped develop a microservices based application - Hemera JS."
+
+#: SCSS DESCRIPTION
+msgid "SCSS"
+msgstr "I use CSS preprocessors for my work if I can - they allow nice nesting of blocks, add the right tags that most browsers read and you can also declare variables in them. I used SCSS when creating this portfolio."
+
+#: LARAVEL DESCRIPTION
+msgid "Laravel"
+msgstr "I first came into contact with laravel at university, where all I had to do was ask a few questions to a colleague who already had quite advanced knowledge and could easily navigate this framework to create a simple backend with the right models and endpoints for database operations. During my time at OPGK, I also helped implement a backend for an online shop."
+
+#: FIGMA DESCRIPTION
+msgid "Figma"
+msgstr "I can create simple graphics in figma. In addition, having mock-ups, I am able to write a GUI implementation of the website quite quickly. I also use FontAwesome and GoogleFonts in my work."
+
+#: PORTFOLIO DESCRIPTION
+msgid "Portfolio"
+msgstr "A website written in DJango, it has a SQLite database, object-relational mapping. I used SCSS to build it. The main functionalities are changing the skin to dark and light - using JS and localStorage. The application has two languages which can be changed in the top left corner or in the link. It is a kind of CMS that allows me to manage the content of the site without interfering with its code - by manipulating the database."
+
+#: TOURON DESCRIPTION
+msgid "TourOn"
+msgstr "Together with the team, we designed an app that allows users to search for guides who can show them around specific places/cities. Only the frontend was written for this application using React. Our team - 2YellowGang took second place at the #Art of Product Building Hackathon!"

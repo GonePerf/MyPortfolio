@@ -824,7 +824,6 @@ body {
   border-bottom: 5px solid white;
   -webkit-transition: .2s;
   transition: .2s;
-  cursor: pointer;
   padding: 5px 15px;
   margin: 10px;
 }
