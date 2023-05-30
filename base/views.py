@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib import messages
@@ -133,9 +132,6 @@ def createTool(request):
             return redirect('home')
     context = { 'form': form }
     return render(request, 'base/components/skill_form.html', context)
-
-def acme_challenge(request):
-    return HttpResponse(settings.ACME_CHALLENGE_CONTENT)
 
 @login_required(login_url='login')
 def updateTool(request, pk):
