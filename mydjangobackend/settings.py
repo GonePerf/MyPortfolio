@@ -63,8 +63,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mydjangobackend.urls'
 
-ACME_CHALLENGE_CONTENT = os.environ['ACME_CHALLENGE_CONTENT']
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
