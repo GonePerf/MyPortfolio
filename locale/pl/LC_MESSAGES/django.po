@@ -29,8 +29,12 @@ msgid "ABOUT ME"
 msgstr "O MNIE"
 
 #: HOMEPAGE P TEXT
-msgid "INTRO"
-msgstr "Sukpiam się na koncepcji rozwoju aplikacji, a nie technologiach z których jest zbudowana. Moja pasja do programowania rozpoczęła się w młodym wieku i od tego czasu stale rozwijam swoje umiejętności. Rozumiem różne koncepcje tworzenia aplikacji, pracowałem z różnymi językami, frameworkami i narzędziami."
+msgid "INTRO1"
+msgstr "Skupiam się na koncepcji i architekturze aplikacji, a nie technologiach z których są one zbudowane. Dla rozrywki programowałem już w młodym wieku i od tego czasu stale się rozwijam."
+
+#: HOMEPAGE P TEXT
+msgid "INTRO2"
+msgstr "Posiadam szeroki zakres wiedzy ale nadal chcę się rozwijać, pracowałem z różnymi językami, frameworkami i narzędziami."
 
 #: ELASTICSEARCH DESCRIPTION
 msgid "Elasticsearch"

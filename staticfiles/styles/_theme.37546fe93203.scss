@@ -1,0 +1,37 @@
+$universal-username-color: lightblue;
+
+$primary-light-theme-color: #e66d6d;
+$secondary-light-theme-color: #3d3434;
+$light-navbar-color: white;
+
+$primary-dark-theme-color: #2884d5;
+$secondary-dark-theme-color: #282438;
+$dark-navbar-color: #222;
+
+#light-theme {
+    background-color: $primary-dark-theme-color;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: $secondary-light-theme-color;
+}
+
+#dark-theme {
+    background-color: #eee;
+    background-blend-mode: difference;
+    background-size:cover;
+    color: $secondary-dark-theme-color;
+}
+#light-theme, #dark-theme {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/874/132/original/abstract-geometric-white-background-free-vector.jpg');
+    height: 100vh;
+}
+
+#light-theme .footer-container {
+    background-color: transparent;
+    color: $secondary-light-theme-color;
+}
+
+#dark-theme .footer-container {
+    background-color: transparent;
+    color: $secondary-dark-theme-color;
+}

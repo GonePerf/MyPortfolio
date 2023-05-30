@@ -8,6 +8,9 @@
         @media (max-width: 1410px) {
             font-size: 12px;
         }
+        @media (max-width: 910px) {
+            font-size: 10px;
+        }
         padding: 0;
         li:nth-child(1) {
             img {
@@ -18,14 +21,17 @@
             width: 100%;
             // text-align: left;
             transition: .2s;
-            padding: 15px 15px;
+            padding: 15px;
             font-weight: bolder;
             display: flex;
             align-items: center;
             justify-content: space-between;
             letter-spacing: 1px;
             cursor: pointer;
-            @media (max-width: 868px) {
+            @media (max-height: 600px) {
+                padding: 5px;
+            }
+            @media (max-width: 848px) {
                 justify-content: center;
             }
             a {
@@ -44,6 +50,14 @@
                         width: 45px;
                         height: 45px;
                     }
+                    @media(max-height: 600px) {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    @media(max-height: 400px) {
+                        width: 19px;
+                        height: 19px;
+                    }
                 }
            
                 div.menu-item-about {
@@ -60,7 +74,7 @@
                 }
             }
             a.text-link {
-                @media(max-width: 868px) {
+                @media(max-width: 848px) {
                     display: none;
                 }
             }
@@ -78,15 +92,21 @@
         transition: .2s;
         width: 100%;
         bottom: 30px;
-        @media(max-width: 868px) {
+        @media(max-width: 828px) {
             flex-direction: column;
         }
+        @media(max-height: 600px) {
+            flex-direction: row;
+        }
         img {
-            width: 70px;
+            width: 50px;
             @media(max-width: 1400px) {
-                width: 50px;
+                width: 35px;
             }
-            @media(max-width: 868px) {
+            @media(max-height: 600px) {
+                width: 20px;
+            }
+            @media(max-width: 828px) {
                 margin-top: 15px;
             }
         }

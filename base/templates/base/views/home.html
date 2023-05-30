@@ -5,7 +5,8 @@
 
 <div class="home-container light-theme">
     {% translate 'ABOUT ME' as about %}
-    {% translate 'INTRO' as intro %}
+    {% translate 'INTRO1' as intro1 %}
+    {% translate 'INTRO2' as intro2 %}
     <div>
         {% include 'menu.html' %}
     </div>
@@ -17,7 +18,10 @@
         </div>
         <div class="about-container">
             <div class="about-image"></div>
-            <p>{{ intro | upper }}</p>
+            <div class="about-text">
+                <p>{{ intro1 | upper }}</p>
+                <p>{{ intro2 | upper }}</p>
+            </div>
         </div>
         {% comment %} {% include 'base/skills_component.html' %} {% endcomment %}
     </div>

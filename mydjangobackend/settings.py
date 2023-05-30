@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
-    'base.apps.BaseConfig'
+    'base.apps.BaseConfig',
+    'letsencrypt'
 ]
 
 MIDDLEWARE = [
@@ -63,6 +64,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mydjangobackend.urls'
+
+ACME_CHALLENGE_CONTENT = os.environ['ACME_CHALLENGE_CONTENT']
 
 TEMPLATES = [
     {

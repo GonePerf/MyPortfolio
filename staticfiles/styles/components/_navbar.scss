@@ -13,7 +13,6 @@
     }
     .my-logo {
         fieldset {
-            height: 80px;
             color: $secondary-light-theme-color;
             font-size: 15px;
             border-color: transparent;
@@ -37,6 +36,11 @@
                     height: 40px;
                     margin: 0;
                 }
+                @media(max-height: 600px) {
+                  width: 37px;
+                  height: 37px;
+                  margin: 0;
+              }
             }
         }
         
@@ -51,9 +55,14 @@
         cursor: pointer;
         @media (max-width: 868px) {
             flex-direction: column;
-            height: 120px;
-            justify-content: space-between;
+            height: 100px;
+            justify-content: space-around;
         }
+        @media (max-height: 600px) {
+          flex-direction: column;
+          height: 85px;
+          justify-content: space-around;
+      }
         label {
             margin: 4px;
         }
@@ -158,6 +167,9 @@
           font-family: inherit;
           cursor: pointer;
           line-height: inherit;
+          @media(max-height: 600px) {
+            padding: 4px;
+          }
         }
         select::-ms-expand {
           display: none;

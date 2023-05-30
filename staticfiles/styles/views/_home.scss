@@ -31,88 +31,91 @@
         position: relative;
         overflow: hidden;
         opacity: .8;
-        margin-left: 15px;
-        p {
+        margin-left: 20px;
+        margin-right: 20px;
+        .about-text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             position: absolute;
-            font-size: 15px;
-            font-family: 'Press Start 2P', cursive;
-            bottom: 10px;
-            line-height: 150%;
-            max-width: 600px;
-            letter-spacing: 2px;
-            text-align: right;
-            padding-left: 100px;
-            @media(max-width: 600px) {
-                font-size: 12px;
-                padding-left: 50px;
+            width: 100%;
+            bottom: 0;
+            :first-child {
+                text-align: right;
             }
-            @media (max-height: 800px) {
-                font-size: 11px;
-            }
-            @media(max-width: 450px) {
-                font-size: 11px;
-                bottom: 5px;
-                padding-left: 10px;
+            p {
+                font-size: 25px;
+                // font-family: 'Press Start 2P', cursive;
+                line-height: 150%;
+                max-width: 600px;
+                letter-spacing: 2px;
+                text-align: left;
+                padding: 20px;
+                margin: 0;
+                @media (max-height: 1100px) {
+                    font-size: 17px;
+                }
+                @media (max-height: 900px) {
+                    font-size: 15px;
+                    padding-top: 0;
+                }
+                @media (max-height: 700px) {
+                    font-size: 13px;
+                }
+                @media(max-width: 800px) {
+                    font-size: 14px;
+                }
+                @media(max-width: 600px) {
+                    font-size: 13px;
+                }
+                @media (max-height: 500px) {
+                    font-size: 10px;
+                }
+                @media(max-width: 400px) {
+                    font-size: 9px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
             }
         }
+        
         .about-image {
-            height: 120%;
-            width: 155%;
+            width: 90%;
+            margin: 20px;
+            height: 40vh;
             background-repeat: no-repeat;
             background-image: url('../images/theme/about_light.png');
+            background-size: contain;
             opacity: .6;
             position: absolute;
-            top: -80px;
-            left: -50px;
-            @media(max-width: 868px) {
-                top: -100px;
-                left: -80px;
-            }
+            top: 30px;
             @media(max-height: 700px) {
-                top: -180px;
-                left: -300px;
-                height: 135%;
-                transform: scale(.49);
+                width: 70%;
+                top: 0;
             }
-            @media (max-width: 680px) {
-                top: -140px;
-                left: -200px;
-                transform: scale(0.5);
-            }
-            @media (max-width: 580px) {
-                top: -200px;
-                left: -270px;
-                width: 230%;
-
-                transform: scale(0.5);
-            }
-            @media (max-width: 440px) {
-                top: -200px;
-                left: -220px;
-                width: 230%;
-
-                transform: scale(0.5);
-            }
-            @media (max-width: 380px) {
-                top: -200px;
-                left: -210px;
-                width: 250%;
-
-                transform: scale(0.5);
+            @media(max-width: 400px) {
+                margin: 10px;
             }
         }
     }
     .terminal-search {
         padding: 5px 15px;
-        strong {
-            color: lawngreen;
-        }
-        input {
-            background-color: transparent;
-            font-weight: bold;
-            outline: none;
-            color: $secondary-light-theme-color;
-            border: 0;
+        width: 100%;
+        form {
+            width: 100%;
+
+            label {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                background-color: transparent;
+                font-weight: bold;
+                outline: none;
+                color: $secondary-light-theme-color;
+                border: 0;
+            }
         }
     }
 }
@@ -125,9 +128,6 @@
         }
     }
     .terminal-search {
-        strong {
-            color: lawngreen;
-        }
         input {
             color: $secondary-dark-theme-color;
         }

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.home-container {
+    .panel-container {
+        height: 40px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            padding: 8px 16px;
+            font-size: 15px;
+            border: black;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid lightblue;
+        }
+        h5 {
+            font-size: 14px;
+            font-weight: bold;
+            strong {
+                color: tomato;
+                font-size: 20px;
+            }
+        }
+    }
+    .about-container {
+        height: 85vh;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        opacity: .8;
+        margin-left: 15px;
+        margin-right: 5px;
+        p {
+            position: absolute;
+            font-size: 25px;
+            // font-family: 'Press Start 2P', cursive;
+            bottom: 10px;
+            line-height: 150%;
+            max-width: 1000px;
+            letter-spacing: 2px;
+            text-align: right;
+            padding-left: 100px;
+            @media(max-width: 600px) {
+                font-size: 18px;
+                padding-left: 50px;
+            }
+            @media (max-height: 800px) {
+                font-size: 16px;
+            }
+            @media(max-width: 450px) {
+                font-size: 16px;
+                bottom: 5px;
+                padding-left: 10px;
+            }
+        }
+        .about-image {
+            width: 90%;
+            margin: 20px !important;
+            height: 40vh;
+            background-repeat: no-repeat;
+            background-image: url('../images/theme/about_light.png');
+            background-size: contain;
+            opacity: .6;
+            position: absolute;
+            top: 30px;
+           
+        }
+    }
+    .terminal-search {
+        padding: 5px 15px;
+        width: 100%;
+        form {
+            width: 100%;
+
+            label {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                height: 30px;
+                background-color: transparent;
+                font-weight: bold;
+                outline: none;
+                color: $secondary-light-theme-color;
+                border: 0;
+            }
+        }
+    }
+}
+
+#dark-theme .home-container {
+    .about-container {
+        background: #222;
+        .about-image {
+            background-image: url('../images/theme/about_dark.png');
+        }
+    }
+    .terminal-search {
+        input {
+            color: $secondary-dark-theme-color;
+        }
+    }
+}

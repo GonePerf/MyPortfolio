@@ -22,15 +22,19 @@ msgstr ""
 
 #: MENU ITEMS
 msgid "ABOUT ME"
-msgstr "ABOUT ME"
+msgstr "ABOUT"
 msgid "TOOLS"
 msgstr "TOOLS"
 msgid "MY PROJECTS"
-msgstr "MY PROJECTS"
+msgstr "PROJECTS"
 
 #: HOMEPAGE P TEXT
-msgid "INTRO"
-msgstr "with a strong focus on the concept of application development rather than the technologies used to do so. My passion for programming started at a young age and I have been continuously developing my skills since then. I have a deep understanding of software development concepts and have worked with various languages, frameworks, and tools."
+msgid "INTRO1"
+msgstr "with a strong focus on the concept of application development rather than the technologies used to do so. My passion for programming started at a young age and I have been continuously developing my skills since then."
+
+#: HOMEPAGE P TEXT
+msgid "INTRO2"
+msgstr "I have a deep understanding of software development concepts and have worked with various languages, frameworks, and tools."
 
 #: ELASTICSEARCH DESCRIPTION
 msgid "Elasticsearch"
