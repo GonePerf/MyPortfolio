@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
     'base.apps.BaseConfig',
+    'letsencrypt'
 ]
 
 MIDDLEWARE = [
