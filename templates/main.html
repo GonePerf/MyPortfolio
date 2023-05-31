@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 {% load static %}
+{% load i18n %}
 <html lang="pl">
 <head>
+    {% get_current_language as LANGUAGE_CODE %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="color-scheme" content="light only">
-    <meta name="description" content="My developer portfolio - all about programming languages and tools I use.">
-    <meta name="keywords" content="kgdevelopment, Konrad Gumienny, kgdev, programowanie, moje projekty, kg, konradg, prostack_zwykly, prostack, goneperf, kgumienny, usługi programistyczne">
+    <meta name="description" content="Konrad Gumienny - My developer portfolio - all about programming languages and tools I use.">
+    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, kgdev, aplikacje webowe, konradg, prostack_zwykly, prostack, goneperf, programowanie, projektowanie stron, tworzenie aplikacji, programista webowy">
     <meta name="author" content="Konrad Gumienny">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
-    <title>Web Development</title>
+    <meta name="robots" content="index, follow">
+    <title>KG Web Development</title>
+    {% block head %}
+    <link rel="canonical" href="https://www.kgdevelopment.pl/{{ LANGUAGE_CODE }}" />
+    {% endblock %}
 </head>
 <body>
     <div id="light-theme">

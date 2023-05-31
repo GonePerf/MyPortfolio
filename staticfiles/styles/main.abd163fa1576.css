@@ -619,7 +619,7 @@ body {
   }
 }
 
-@media (max-width: 828px) {
+@media (max-width: 848px) {
   .menu-items-container ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -665,6 +665,18 @@ body {
 
 .menu-items-container ul li a div.menu-item-about {
   background-image: url("../images/menu/about_light.png");
+}
+
+.menu-items-container ul li a div.menu-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/menu/about_light.png");
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .menu-items-container ul li a div.menu-item-technologies {

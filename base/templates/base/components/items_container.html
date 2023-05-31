@@ -12,9 +12,9 @@
 
     <div class="tool-container">
         <div class="tool-information">
-            <img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png">
+            <img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ slkill.name }} Logo">
             <div class="tool-checkout">
-                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png"><a href="#"> {{ skill.name }} </a></h3>
+                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ slkill.name }} Logo"><a href="#"> {{ skill.name }} </a></h3>
                 <p>{{ desc}}</p>
             </div>
         </div>
