@@ -18,12 +18,21 @@ from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
 from django.views.i18n import JavaScriptCatalog, set_language
 from django.urls import path, include
+from django.views.generic.base import TemplateView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
     path('set_language/', set_language, name='set_language'),
+    path(
+        "robots.txt",
+        TemplateView.as_view(template_name="robots.txt", content_type="text/plain"),
+    ),
+    path(
+        "sitemap.xml",
+        TemplateView.as_view(template_name="sitemap.xml", content_type="text/plain"),
+    ),
 ]
 
 urlpatterns += i18n_patterns(
