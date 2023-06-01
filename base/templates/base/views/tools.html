@@ -1,5 +1,6 @@
 {% extends 'main.html' %}
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 {% block content %}
 
 <div class="home-container light-theme">
@@ -33,3 +34,6 @@
 </div>
 
 {% endblock content %}
+{% block head %}
+    <link rel="canonical" href="https://www.kgdevelopment.pl/{{ LANGUAGE_CODE }}/tools" />
+{% endblock %}
