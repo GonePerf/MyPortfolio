@@ -1,6 +1,7 @@
 {% extends 'main.html' %}
-{% load static %}7
+{% load static %}
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 {% block content %}
 
 <div class="home-container light-theme">
@@ -10,13 +11,18 @@
     <div>
         {% include 'menu.html' %}
     </div>
-
     <div>
         <div class="panel-container">
             {% comment %} <a href="{% url 'create-skill' %}"> + ADD NEW SKILL</a> {% endcomment %}
             <h5><strong>&rsaquo;</strong> {{ about }}</h5>
+            <small>KGUMIENNY.FIRMA@GMAIL.COM</small>
         </div>
         <div class="about-container">
+            {% if LANGUAGE_CODE == 'pl' %}
+            <h1 style="display: none">Konrad Gumienny - Moje portfolio. Prezentacja narzędzi z których korzystam.</h1>
+            {% else %}
+            <h1 style="display: none">Konrad Gumienny - My portfolio. Presentation of the tools I use.</h1>
+            {% endif %}
             <div class="about-image"></div>
             <div class="about-text">
                 <p>{{ intro1 | upper }}</p>

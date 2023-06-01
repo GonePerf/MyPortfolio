@@ -59,16 +59,6 @@ body {
   }
 }
 
-.panel-container small {
-  font-weight: bolder;
-}
-
-@media (max-width: 500px) {
-  .panel-container small {
-    font-size: 10px;
-  }
-}
-
 #light-theme a {
   text-decoration: none;
   color: #333;
@@ -139,7 +129,7 @@ body {
 .navbar-container .my-logo fieldset .my-avatar {
   width: 60px;
   height: 60px;
-  background-image: url("../images/theme/logo_dark.png");
+  background-image: url("../images/theme/logo_dark.6391d20b5683.png");
   background-size: cover;
   margin-right: 10px;
 }
@@ -340,7 +330,7 @@ body {
 }
 
 #dark-theme .navbar-container .my-logo fieldset .my-avatar {
-  background-image: url("../images/theme/logo_light.png");
+  background-image: url("../images/theme/logo_light.4c40266b99e3.png");
 }
 
 #dark-theme .navbar-container .change-language select {
@@ -474,7 +464,7 @@ body {
   margin: 20px;
   height: 40vh;
   background-repeat: no-repeat;
-  background-image: url("../images/theme/about_light.png");
+  background-image: url("../images/theme/about_light.769a52565334.png");
   background-size: contain;
   opacity: .6;
   position: absolute;
@@ -522,7 +512,7 @@ body {
 }
 
 #dark-theme .home-container .about-container .about-image {
-  background-image: url("../images/theme/about_dark.png");
+  background-image: url("../images/theme/about_dark.519eee8dd046.png");
 }
 
 #dark-theme .home-container .terminal-search input {
@@ -674,19 +664,19 @@ body {
 }
 
 .menu-items-container ul li a div.menu-item-about {
-  background-image: url("../images/menu/about_light.png");
+  background-image: url("../images/menu/about_light.282ed0b59f00.png");
 }
 
 .menu-items-container ul li a div.menu-item-technologies {
-  background-image: url("../images/menu/technologies_light.png");
+  background-image: url("../images/menu/technologies_light.d47ded6e2385.png");
 }
 
 .menu-items-container ul li a div.menu-item-projects {
-  background-image: url("../images/menu/my_projects_light.png");
+  background-image: url("../images/menu/my_projects_light.cf49492fbc64.png");
 }
 
 .menu-items-container ul li a div.menu-item-contact {
-  background-image: url("../images/menu/contact_light.png");
+  background-image: url("../images/menu/contact_light.5316d8da0dfa.png");
 }
 
 @media (max-width: 848px) {
@@ -768,19 +758,19 @@ body {
 }
 
 #dark-theme .menu-items-container ul li div.menu-item-about {
-  background-image: url("../images/menu/about_dark.png");
+  background-image: url("../images/menu/about_dark.1b52138e1544.png");
 }
 
 #dark-theme .menu-items-container ul li div.menu-item-technologies {
-  background-image: url("../images/menu/technologies_dark.png");
+  background-image: url("../images/menu/technologies_dark.b5b0ba373a20.png");
 }
 
 #dark-theme .menu-items-container ul li div.menu-item-projects {
-  background-image: url("../images/menu/my_projects_dark.png");
+  background-image: url("../images/menu/my_projects_dark.c430486dc282.png");
 }
 
 #dark-theme .menu-items-container ul li div.menu-item-contact {
-  background-image: url("../images/menu/contact_dark.png");
+  background-image: url("../images/menu/contact_dark.1bfea4f3ac2b.png");
 }
 
 .tools-container {
@@ -898,14 +888,10 @@ body {
 }
 
 .tools-container .tool-container div.no-admin-user .stars-container .star {
-  background-image: url("../images/skills/star_light.png");
+  background-image: url("../images/skills/star_light.92ff2e30ecdd.png");
   background-size: cover;
   width: 25px;
   height: 25px;
-}
-
-.tools-container .tool-container div.no-admin-user .stars-container .star.yellow {
-  background-image: url("../images/skills/star_yellow.png");
 }
 
 .tools-container .tool-container .tool-actions {
@@ -978,7 +964,7 @@ body {
 }
 
 #dark-theme .tools-container div.no-admin-user .stars-container .star {
-  background-image: url("../images/skills/star_dark.png");
+  background-image: url("../images/skills/star_dark.7b790ee59e53.png");
 }
 
 #dark-theme .tools-container .tool-container:hover {
@@ -1008,4 +994,4 @@ body {
 #dark-theme .footer-container p {
   background-color: #222;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.c07c1bc159a3.map */

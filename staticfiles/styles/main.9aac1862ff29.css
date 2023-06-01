@@ -667,18 +667,6 @@ body {
   background-image: url("../images/menu/about_light.png");
 }
 
-.menu-items-container ul li a div.menu-items::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../images/menu/about_light.png");
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
 .menu-items-container ul li a div.menu-item-technologies {
   background-image: url("../images/menu/technologies_light.png");
 }
@@ -995,6 +983,12 @@ body {
   background-color: white;
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .footer-container p {
+    font-size: 13px;
+  }
 }
 
 #dark-theme .footer-container p {

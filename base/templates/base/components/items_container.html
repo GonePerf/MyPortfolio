@@ -14,7 +14,7 @@
         <div class="tool-information">
             <img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ slkill.name }} Logo">
             <div class="tool-checkout">
-                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ slkill.name }} Logo"><a href="#"> {{ skill.name }} </a></h3>
+                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ skill.name }} Logo"><a href="#"> {{ skill.name }} </a></h3>
                 <p>{{ desc}}</p>
             </div>
         </div>
@@ -40,11 +40,17 @@
         <div class="no-admin-user">
             <a href="#">@{{ skill.host.username }}</a>
             <div class="stars-container">
-                <div class="star star-1"></div>
-                <div class="star star-2"></div>
-                <div class="star star-3"></div>
-                <div class="star star-4"></div>
-                <div class="star star-5"></div>
+                <div class="star yellow"></div>
+                <div class="star yellow"></div>
+                <div class="star yellow"></div>
+                {% if skill.stars == 4 %}
+                <div class="star yellow"></div>
+                <div class="star"></div>
+                {% else %}
+                <div class="star"></div>
+                <div class="star"></div>
+                {% endif %}
+                
             </div>
         </div>
 

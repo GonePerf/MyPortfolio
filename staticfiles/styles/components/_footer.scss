@@ -8,6 +8,9 @@
         background-color: $light-navbar-color;
         text-align: center;
         font-weight: bold;
+        @media(max-width: 1000px) {
+            font-size: 13px;
+        }
     }
 }
 #dark-theme .footer-container {

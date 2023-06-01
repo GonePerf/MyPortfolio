@@ -4,11 +4,6 @@
 {% block content %}
 
 <div class="home-container light-theme">
-    {% if LANGUAGE_CODE == 'pl' %}
-    <h1 style="display: none">Konrad Gumienny - Prezentacja moich projektów.</h1>
-    {% else %}
-    <h1 style="display: none">Konrad Gumienny - Presentation of the projects I create.</h1>
-    {% endif %}
     {% translate 'MY PROJECTS' as projects %}
     <div>
         {% include 'menu.html' %}
@@ -18,8 +13,14 @@
         <div class="panel-container">
             {% comment %} <a href="{% url 'create-skill' %}"> + ADD NEW SKILL</a> {% endcomment %}
             <h5><strong>&rsaquo;</strong> {{ projects }}</h5>
+            <small>KGUMIENNY.FIRMA@GMAIL.COM</small>
         </div>
 
+        {% if LANGUAGE_CODE == 'pl' %}
+        <h1 style="display: none">Konrad Gumienny - Prezentacja moich projektów.</h1>
+        {% else %}
+        <h1 style="display: none">Konrad Gumienny - Presentation of the projects I create.</h1>
+        {% endif %}
         
         {% include 'base/components/items_container.html' %}
     </div>

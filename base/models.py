@@ -16,7 +16,7 @@ class Tool(models.Model):
     participants = models.ManyToManyField(User, related_name='participants', blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    stars = models.IntegerField(null=True)
     class Meta:
         ordering = ['-updated', '-created']
 
@@ -29,7 +29,7 @@ class Project(models.Model):
     description = models.TextField(null=True, blank=True)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
-
+    stars = models.IntegerField(null=True)
     class Meta:
         ordering = ['-updated', '-created']
 
