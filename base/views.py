@@ -93,6 +93,9 @@ def projects(request):
     }
     return render(request, 'base/views/projects.html', context)
 
+def custom_page_not_found_view(request, exception):
+    return render(request, "base/views/404.html", {})
+
 # def tool(request, pk):
 #     skill = Tool.objects.get(id=pk)
 #     tool_messages = skill.message_set.all().order_by('-created')

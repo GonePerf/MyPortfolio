@@ -27,6 +27,14 @@ body {
         @media(max-width: 400px) {
             font-size: 8px;
         }
+        @media(max-width: 350px) {
+            font-size: 6px;
+        }
+    }
+}
+.error-container {
+    h1 {
+        text-align: center;
     }
 }
 #light-theme a {

@@ -20,6 +20,7 @@ from django.views.i18n import JavaScriptCatalog, set_language
 from django.urls import path, include
 from django.views.generic.base import TemplateView
 
+handler404 = 'base.views.custom_page_not_found_view'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,7 +35,6 @@ urlpatterns = [
         TemplateView.as_view(template_name="sitemap.xml", content_type="text/plain"),
     ),
 ]
-
 urlpatterns += i18n_patterns(
     # Put translatable views here
     path('', include('base.urls')),

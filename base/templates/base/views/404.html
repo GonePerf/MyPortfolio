@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% block content %}
+
+<div class="home-container light-theme">
+    <div>
+        {% include 'menu.html' %}
+    </div>
+    <div>
+        <div class="panel-container">
+            {% comment %} <a href="{% url 'create-skill' %}"> + ADD NEW SKILL</a> {% endcomment %}
+            <h5><strong>&rsaquo;</strong> 404</h5>
+            <small>KGUMIENNY.FIRMA@GMAIL.COM</small>
+        </div>
+        <div class="error-container">
+            {% if LANGUAGE_CODE == 'pl' %}
+            <h1>404 <br> BRAK PODANEJ STRONY.</h1>
+            {% else %}
+            <h1>404 <br> PAGE NOT FOUND.</h1>
+            {% endif %}
+        </div>
+    </div>
+
+    {% comment %} <div>
+        {% include 'base/activity_component.html' %}
+    </div> {% endcomment %}
+
+</div>
+
+{% endblock content %}

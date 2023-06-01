@@ -75,6 +75,16 @@ body {
   }
 }
 
+@media (max-width: 350px) {
+  .panel-container small {
+    font-size: 6px;
+  }
+}
+
+.error-container h1 {
+  text-align: center;
+}
+
 #light-theme a {
   text-decoration: none;
   color: #333;
@@ -1002,6 +1012,10 @@ body {
 
 #dark-theme .tools-container div.no-admin-user .stars-container p {
   color: #eee;
+}
+
+#dark-theme .tools-container div.no-admin-user .stars-container p.active {
+  color: tomato;
 }
 
 #dark-theme .tools-container .tool-container:hover {

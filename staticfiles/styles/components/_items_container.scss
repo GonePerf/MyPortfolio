@@ -135,6 +135,9 @@
             p {
                 color: $secondary-dark-theme-color;
             }
+            p.active {
+                color: tomato;
+            }
         }
     }
     
