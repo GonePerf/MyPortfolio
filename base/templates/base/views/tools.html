@@ -4,6 +4,12 @@
 {% block content %}
 
 <div class="home-container light-theme">
+    {% if LANGUAGE_CODE == 'pl' %}
+    <h1 style="display: none">Konrad Gumienny - Narzędzia wykorzystywane przeze mnie do tworzenia stron i aplikacji internetowych.</h1>
+    {% else %}
+    <h1 style="display: none">Konrad Gumienny - Tools I use to creating web applications.</h1>
+    {% endif %}
+    {% translate 'MY PROJECTS' as projects %}
     <div>
         {% include 'menu.html' %}
     </div>
@@ -36,4 +42,12 @@
 {% endblock content %}
 {% block head %}
     <link rel="canonical" href="https://www.kgdevelopment.pl/{{ LANGUAGE_CODE }}/tools" />
+    
+    {% if LANGUAGE_CODE == 'pl' %}
+    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, narzędzia, aplikacje webowe, konradg, prostack_zwykly, prostack, goneperf, programowanie, projektowanie stron, tworzenie aplikacji, programista webowy">
+    <meta name="description" content="Konrad Gumienny - Portfolio - narzędzia które wykorzystuje do pracy. Frameworki, języki programowania itp.">
+    {% else %}
+    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, tools, web apps, web applications, prostack_zwykly, prostack, goneperf, programming, designing web pages, creating web apps, web programmer">
+    <meta name="description" content="Konrad Gumienny - My developer portfolio - all about programming languages and tools I use. Frameworks, programming languages etc.">
+    {% endif %}
 {% endblock %}

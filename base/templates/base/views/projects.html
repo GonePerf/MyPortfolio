@@ -4,6 +4,11 @@
 {% block content %}
 
 <div class="home-container light-theme">
+    {% if LANGUAGE_CODE == 'pl' %}
+    <h1 style="display: none">Konrad Gumienny - Prezentacja moich projektów.</h1>
+    {% else %}
+    <h1 style="display: none">Konrad Gumienny - Presentation of the projects I create.</h1>
+    {% endif %}
     {% translate 'MY PROJECTS' as projects %}
     <div>
         {% include 'menu.html' %}
@@ -24,4 +29,11 @@
 {% endblock content %}
 {% block head %}
     <link rel="canonical" href="https://www.kgdevelopment.pl/{{ LANGUAGE_CODE }}/projects" />
+    {% if LANGUAGE_CODE == 'pl' %}
+    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, moje projekty, aplikacje webowe, aplikacje które stworzyłem, prostack_zwykly, prostack, goneperf, programowanie, projektowanie stron, tworzenie aplikacji, programista webowy">
+    <meta name="description" content="Konrad Gumienny - Portfolio - projekty które stworzyłem podczas nauki programowania. Frameworki, języki programowania itp.">
+    {% else %}
+    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, projects, my web apps, web applications, prostack_zwykly, prostack, goneperf, programming, designing web pages, creating web apps, web programmer, applications I create">
+    <meta name="description" content="Konrad Gumienny - My developer portfolio - all about projects I create. Frameworks, programming languages etc.">
+    {% endif %}
 {% endblock %}
