@@ -39,11 +39,12 @@
         
         <div class="no-admin-user">
             <a href="#">@{{ skill.host.username }}</a>
+            {% if skill.stars == '0' %}
             <div class="stars-container">
                 <div class="star yellow"></div>
                 <div class="star yellow"></div>
                 <div class="star yellow"></div>
-                {% if skill.stars == 4 %}
+                {% if skill.stars == '4' %}
                 <div class="star yellow"></div>
                 <div class="star"></div>
                 {% else %}

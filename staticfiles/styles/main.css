@@ -69,6 +69,12 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .panel-container small {
+    font-size: 8px;
+  }
+}
+
 #light-theme a {
   text-decoration: none;
   color: #333;
