@@ -897,15 +897,13 @@ body {
           justify-content: space-between;
 }
 
-.tools-container .tool-container div.no-admin-user .stars-container .star {
-  background-image: url("../images/skills/star_light.png");
-  background-size: cover;
-  width: 25px;
-  height: 25px;
+.tools-container .tool-container div.no-admin-user .stars-container p {
+  color: #333;
+  font-size: 30px;
 }
 
-.tools-container .tool-container div.no-admin-user .stars-container .star.yellow {
-  background-image: url("../images/skills/star_yellow.png");
+.tools-container .tool-container div.no-admin-user .stars-container p.active {
+  color: tomato;
 }
 
 .tools-container .tool-container .tool-actions {
@@ -977,8 +975,8 @@ body {
   border-bottom: 5px solid #222;
 }
 
-#dark-theme .tools-container div.no-admin-user .stars-container .star {
-  background-image: url("../images/skills/star_dark.png");
+#dark-theme .tools-container div.no-admin-user .stars-container p {
+  color: #eee;
 }
 
 #dark-theme .tools-container .tool-container:hover {

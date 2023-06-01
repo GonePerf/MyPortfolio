@@ -905,7 +905,26 @@ body {
 
 .tools-container .tool-container div.no-admin-user .stars-container p {
   color: #333;
-  font-size: 30px;
+  font-size: 34px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .tools-container .tool-container div.no-admin-user .stars-container p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tools-container .tool-container div.no-admin-user .stars-container p {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tools-container .tool-container div.no-admin-user .stars-container p {
+    font-size: 24px;
+  }
 }
 
 .tools-container .tool-container div.no-admin-user .stars-container p.active {
