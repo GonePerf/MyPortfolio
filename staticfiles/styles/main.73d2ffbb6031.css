@@ -59,6 +59,16 @@ body {
   }
 }
 
+.panel-container small {
+  font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+  .panel-container small {
+    font-size: 10px;
+  }
+}
+
 #light-theme a {
   text-decoration: none;
   color: #333;
@@ -773,107 +783,6 @@ body {
   background-image: url("../images/menu/contact_dark.png");
 }
 
-.activity-container {
-  overflow: scroll;
-  scrollbar-width: none;
-  min-height: unset;
-  max-height: calc(94vh - 80px);
-  border-radius: 10px;
-  margin: 25px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #eee;
-  background-image: linear-gradient(45deg, #333 0%, #282832 100%);
-}
-
-.activity-container h5 {
-  text-align: center;
-  padding: 5px 0;
-  margin: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.activity-container .message-container {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.activity-container .message-container small {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 9px;
-}
-
-.activity-container .message-container small a {
-  color: lightblue;
-}
-
-.activity-container .message-container .reply-info {
-  font-size: 6px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.activity-container .message-container p {
-  font-size: 9px;
-}
-
-.activity-container .message-container hr {
-  margin: 0;
-}
-
-.activity-container .message-container > a {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  color: red;
-  font-size: 8px;
-  margin: 0;
-}
-
-@media (max-width: 1100px) {
-  .activity-container {
-    display: none;
-  }
-}
-
-.activity-container::-webkit-scrollbar {
-  display: none;
-}
-
-#dark-theme .activity-container {
-  color: #eee;
-  background-image: linear-gradient(45deg, #333 0%, #282832 100%);
-}
-
-.activity-container {
-  background-color: rgba(0, 0, 0, 0.4);
-  overflow: scroll;
-  scrollbar-width: none;
-  border-left: 1px solid black;
-}
-
-.activity-container h3 {
-  text-align: center;
-  padding-top: 5px;
-  margin: 0;
-}
-
-.activity-container div {
-  padding: 10px;
-  background-color: #101120;
-  margin: 10px 5px;
-  border-radius: 10px;
-}
-
 .tools-container {
   padding: 30px;
   max-height: calc(94vh - 50px);
@@ -1099,4 +1008,4 @@ body {
 #dark-theme .footer-container p {
   background-color: #222;
 }
-/*# sourceMappingURL=main.abd163fa1576.css.map */
+/*# sourceMappingURL=main.73d2ffbb6031.css.map */

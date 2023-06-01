@@ -894,6 +894,10 @@ body {
   height: 25px;
 }
 
+.tools-container .tool-container div.no-admin-user .stars-container .star.yellow {
+  background-image: url("../images/skills/star_yellow.png");
+}
+
 .tools-container .tool-container .tool-actions {
   display: -webkit-box;
   display: -ms-flexbox;
