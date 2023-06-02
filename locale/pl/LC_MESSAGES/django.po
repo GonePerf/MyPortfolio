@@ -88,6 +88,11 @@ msgstr "Jeśli mogę to wykorzystuję preprocesory CSS do pracy - pozwalają one
 msgid "Laravel"
 msgstr "Z laravelem pierwszy raz miałem styczność na studiach, gdzie wystarczyło mi zadać kilka pytań koledze, który posiadał już dosyć zaawansowaną wiedzę i łatwo poruszał się po tym frameworku, aby stworzyć prosty backend z odpowiednimi modelami i endpointami do operacji na bazie danych. Podczas pracy w OPGK również pomagałem w implementacji Backendu do sklepu internetowego."
 
+#: TOURON DESCRIPTION
+msgid "Photopea"
+msgstr "Staram się korzystać z darmowych narzędzi. Photopea ma zbliżone funkcjonalności do photoshopa. Często z niej korzystam gdy potrzebuję szybko edytować jakiś obraz."
+
+
 #: FIGMA DESCRIPTION
 msgid "Figma"
 msgstr "Potrafię tworzyć proste grafiki w figmie. Dodatkowo posiadając makiety jestem w stanie dość szybko napisać implementację interfejsu graficznego strony. Wykorzystuję również FontAwesome oraz GoogleFonts w swojej pracy."
@@ -99,3 +104,7 @@ msgstr "Strona internetowa napisana w DJango, posiada ona bazę danych SQLite or
 #: TOURON DESCRIPTION
 msgid "TourOn"
 msgstr "Wspólnie z team'em zaprojektowaliśmy aplikację umożliwiającą użytkownikom wyszukiwanie przewodników którzy mogą oprowadzić ich po określonych miejscach/miastach. Do tej aplikacji został napisany jedynie frontend za pomocą React'a. Nasz zespół - 2YellowGang zajął drugie miejsce na #Art of Product Building Hackathon!"
+
+#: TOURON DESCRIPTION
+msgid "Rick&Morty"
+msgstr "Responsywny layout w Vue odwzorowany z pliku PSD. Kiedyś robiłem to jako zadanie rekrutacyjne. Strona umożliwia wybór postaci pobranych z API Rick'a i Morty'ego i wysłanie do niej wiadomości. Zapis wiadomości jest zrobiony za pomocą localStorage."

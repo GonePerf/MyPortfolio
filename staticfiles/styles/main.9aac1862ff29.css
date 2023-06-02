@@ -95,6 +95,12 @@ body {
   border-bottom: 5px solid black;
 }
 
+@media (max-height: 400px) {
+  .navbar-container {
+    padding: 0;
+  }
+}
+
 @media (max-width: 868px) {
   .navbar-container {
     padding: 10px 0;
@@ -986,6 +992,10 @@ body {
 
 #dark-theme .tools-container div.no-admin-user .stars-container p {
   color: #eee;
+}
+
+#dark-theme .tools-container div.no-admin-user .stars-container p.active {
+  color: tomato;
 }
 
 #dark-theme .tools-container .tool-container:hover {

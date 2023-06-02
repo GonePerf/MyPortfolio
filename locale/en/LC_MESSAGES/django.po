@@ -90,6 +90,10 @@ msgstr "I first came into contact with laravel at university, where all I had to
 msgid "Figma"
 msgstr "I can create simple graphics in figma. In addition, having mock-ups, I am able to write a GUI implementation of the website quite quickly. I also use FontAwesome and GoogleFonts in my work."
 
+#: TOURON DESCRIPTION
+msgid "Photopea"
+msgstr "I try to use free tools. Photopea has similar functionality to photoshop. I often use it when I need to edit an image quickly."
+
 #: PORTFOLIO DESCRIPTION
 msgid "Portfolio"
 msgstr "A website written in DJango, it has a SQLite database, object-relational mapping. I used SCSS to build it. The main functionalities are changing the skin to dark and light - using JS and localStorage. The application has two languages which can be changed in the top left corner or in the link. It is a kind of CMS that allows me to manage the content of the site without interfering with its code - by manipulating the database."
@@ -97,3 +101,7 @@ msgstr "A website written in DJango, it has a SQLite database, object-relational
 #: TOURON DESCRIPTION
 msgid "TourOn"
 msgstr "Together with the team, we designed an app that allows users to search for guides who can show them around specific places/cities. Only the frontend was written for this application using React. Our team - 2YellowGang took second place at the #Art of Product Building Hackathon!"
+
+#: TOURON DESCRIPTION
+msgid "Rick&Morty"
+msgstr "Responsive layout in Vue reproduced from a PSD file. I used to do this as a recruitment task. The site allows you to select a character taken from the Rick and Morty API and send a message to it. The message storage is done using localStorage."

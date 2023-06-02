@@ -96,6 +96,9 @@ def projects(request):
 def custom_page_not_found_view(request, exception):
     return render(request, "base/views/404.html", {})
 
+def redirect_view(request):
+    response = redirect('home')
+    return response
 # def tool(request, pk):
 #     skill = Tool.objects.get(id=pk)
 #     tool_messages = skill.message_set.all().order_by('-created')
