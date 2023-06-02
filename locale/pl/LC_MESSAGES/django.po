@@ -30,7 +30,7 @@ msgstr "O MNIE"
 
 #: HOMEPAGE P TEXT
 msgid "INTRO1"
-msgstr "Skupiam się na koncepcji i architekturze aplikacji, a nie technologiach z których są one zbudowane. Dla rozrywki programowałem już w młodym wieku i od tego czasu stale się rozwijam."
+msgstr "Skupiam się na koncepcji i architekturze aplikacji, a nie technologiach z których są one zbudowane. Dla rozrywki programowałem już w młodym wieku i od tamtego czasu stale się uczę."
 
 #: HOMEPAGE P TEXT
 msgid "INTRO2"
