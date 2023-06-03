@@ -34,7 +34,9 @@ urlpatterns = [
         "sitemap.xml",
         TemplateView.as_view(template_name="sitemap.xml", content_type="text/plain"),
     ),
-    path('', redirect_view)
+    path('', redirect_view),
+    path('en', redirect_view),
+    path('pl', redirect_view),
 ]
 urlpatterns += i18n_patterns(
     # Put translatable views here

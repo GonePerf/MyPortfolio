@@ -308,7 +308,7 @@ body {
 .navbar-container .user-information #theme-icon input:checked + .slider:before {
   -webkit-transform: translateX(12px);
           transform: translateX(12px);
-  background: yellow url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTt-h0Jg8bPKoa3dvJM_KuJbWsCKn-QIcK9n8M5Yf3cDE09YzLIZzrHXyOzHFFIUB9ZMI&usqp=CAU");
+  background: yellow url("../images/sun.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -356,6 +356,13 @@ body {
 
 #dark-theme .navbar-container {
   background: #222;
+  border-bottom: 5px solid white;
+}
+
+@media (max-height: 400px) {
+  #dark-theme .navbar-container {
+    border-bottom: 2px solid white;
+  }
 }
 
 #dark-theme .navbar-container .my-logo fieldset {
@@ -1015,6 +1022,12 @@ body {
   background: rgba(34, 34, 34, 0.6) !important;
   border-left: 5px solid white;
   border-bottom: 5px solid #222;
+}
+
+@media (max-width: 868px) {
+  #dark-theme .tools-container .tool-container {
+    border-left: 2px solid white;
+  }
 }
 
 #dark-theme .tools-container div.no-admin-user .stars-container p {
