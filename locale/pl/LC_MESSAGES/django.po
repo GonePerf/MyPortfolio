@@ -42,7 +42,7 @@ msgstr "Mam praktyczne doświadczenie z Elasticsearch, zdobyte głównie dzięki
 
 #: VUE DESCRIPTION
 msgid "Vue"
-msgstr "Pierwszy raz z Vue spotkałem się 2 lata temu na praktykach w firmie Ideo. Ten framework od razu przypadł mi do gustu i zamierzam z niego korzystać. Mam praktyczne doświadczenie z Vue.js 2.0. Dzięki Vue 2.0 mogę tworzyć dynamiczne i interaktywne aplikacje internetowe przy użyciu architektury opartej na komponentach, reaktywnego wiązania danych, routingu itp. Jestem zaznajomiony z Vue.js 3.0, najnowszą wersją Vue.js. Vue 3.0 wprowadza kilka ulepszeń, w tym szybszy silnik renderujący, lepszą obsługę TypeScript i ulepszoną reaktywność dzięki Composition API."
+msgstr "Pierwszy raz z Vue spotkałem się 2 lata temu na praktykach w firmie Ideo. Ten framework od razu przypadł mi do gustu i zamierzam z niego korzystać. Mam praktyczne doświadczenie z Vue 2. Za jego pomocą mogę tworzyć dynamiczne i interaktywne aplikacje internetowe przy użyciu architektury opartej na komponentach, reaktywnego wiązania danych, routingu itp. Jestem zaznajomiony z Vue 3, najnowszą wersją Vue. Vue 3 wprowadza kilka ulepszeń, w tym szybszy silnik renderujący, lepszą obsługę TypeScript i ulepszoną reaktywność dzięki Composition API."
 
 #: DJANGO DESCRIPTION
 msgid "DJango"

@@ -184,6 +184,10 @@
 }
 #dark-theme .navbar-container {
     background: $dark-navbar-color;
+    border-bottom: 5px solid white;
+    @media(max-height: 400px) {
+      border-bottom: 2px solid white;
+    }
     .my-logo {
         fieldset {
             color: $secondary-dark-theme-color;

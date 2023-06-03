@@ -128,7 +128,9 @@
         background: rgba($dark-navbar-color, 0.6) !important;
         border-left: 5px solid white;
         border-bottom: 5px solid $dark-navbar-color;
-
+        @media(max-width: 868px) {
+            border-left: 2px solid white;
+        }
     }
     div.no-admin-user {
         .stars-container {
