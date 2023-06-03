@@ -43,12 +43,13 @@
 {% endblock content %}
 {% block head %}
     <link rel="canonical" href="https://www.kgdevelopment.pl/{{ LANGUAGE_CODE }}/tools" />
-    
     {% if LANGUAGE_CODE == 'pl' %}
-    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, narzędzia, aplikacje webowe, konradg, prostack_zwykly, prostack, goneperf, programowanie, projektowanie stron, tworzenie aplikacji, programista webowy">
-    <meta name="description" content="Konrad Gumienny - Portfolio - narzędzia które wykorzystuje do pracy. Frameworki, języki programowania itp. KG Development nie jest nazwą firmy. Potrzebujesz programisty aplikacji internetowych, który może pracować za równo na frontendzie jak i na backendzie? Napisz do mnie: kgumienny.firma@gmail.com">
+    <title>KG - Narzędzia</title>
+    <meta name="keywords" content="NodeJS, Terminal, Vue, Photopea, Figma, Laravel, Django, MySQL, Elasticsearch, kgdevelopment, konrad gumienny portfolio, narzędzia, aplikacje webowe, konradg, projektowanie stron, tworzenie aplikacji, programista webowy">
+    <meta name="description" content="Konrad Gumienny - Portfolio - Odkryj potężne narzędzia, których używam w procesie tworzenia stron internetowych. Wykorzystuję technologie takie jak NodeJS, Terminal, Vue, Photopea, Figma, Laravel, Django, MySQL i Elasticsearch, aby dostarczyć innowacyjne i funkcjonalne rozwiązania dla Twojego projektu.">
     {% else %}
+    <title>KG - Tools</title>
     <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, tools, web apps, web applications, prostack_zwykly, prostack, goneperf, programming, designing web pages, creating web apps, web programmer">
-    <meta name="description" content="Konrad Gumienny - My developer portfolio - all about programming languages and tools I use. Frameworks, programming languages etc.  If you need help with your website contact me by e-mail: kgumienny.firma@gmail.com. KG Development is not a company name! Professional web development services.">
+    <meta name="description" content="Konrad Gumienny - My developer portfolio - Discover the powerful tools I use in the web development process. I use technologies such as NodeJS, Terminal, Vue, Photopea, Figma, Laravel, Django, MySQL and Elasticsearch to deliver innovative and functional solutions for your project.">
     {% endif %}
 {% endblock %}

@@ -13,11 +13,16 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}">
     <meta name="robots" content="index, follow">
-    <title>KG Web Development</title>
     {% block head %}
+    <title>KG - Portfolio</title>
     <link rel="canonical" href="https://www.kgdevelopment.pl/{{ LANGUAGE_CODE }}/" />
-    <meta name="description" content="Konrad Gumienny - My developer portfolio - all about programming languages and tools I use. If you need help with your website contact me by e-mail: kgumienny.firma@gmail.com. KG Development is not a company name! Professional web development services.">
-    <meta name="keywords" content="kgdevelopment, konrad gumienny portfolio, kgdev, aplikacje webowe, konradg, prostack_zwykly, prostack, goneperf, programowanie, projektowanie stron, tworzenie aplikacji, programista webowy">
+        {% if LANGUAGE_CODE == 'pl' %}
+        <meta name="description" content="Konrad Gumienny - Zapraszam do mojego portfolio, gdzie prezentuję moje umiejętności w projektowaniu interfejsów użytkownika i tworzeniu zaawansowanych funkcjonalności aplikacji internetowych. Odkryj, jak tworzę responsywne i intuicyjne rozwiązania, które przekształcają wizję Twojej marki w interaktywną rzeczywistość online.">
+        <meta name="keywords" content="Tworzenie aplikacji internetowych, projektowanie stron internetowych, usługi tworzenia stron internetowych, customowe aplikacje internetowe, responsywne projektowanie stron internetowych, tworzenie front-endu, tworzenie back-endu, projektowanie UI/UX, usługi programistyczne, portfolio Konrada Gumiennego">
+        {% else %}     
+        <meta name="keywords" content="Web application development, Website design, Web development services, Custom web solutions, Responsive web design, Front-end development, Back-end development, UI/UX design, Programming services, Konrad Gumienny portfolio">
+        <meta name="description" content="Konrad Gumienny - Welcome to my portfolio, where I showcase my skills in user interface design and advanced web application development. Discover how I create responsive and intuitive solutions that transform your brand vision into an interactive online reality.">
+        {% endif %}
     {% endblock %}
 </head>
 <body>
