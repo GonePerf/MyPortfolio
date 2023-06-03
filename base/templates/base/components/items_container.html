@@ -12,9 +12,9 @@
 
     <div class="tool-container">
         <div class="tool-information">
-            <img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ skill.name }} Logo">
+            <img src="https://www.kgdevelopment.pl{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ skill.name }} Logo">
             <div class="tool-checkout">
-                <h3><img src="{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ skill.name }} Logo"><a href="#"> {{ skill.name }} </a></h3>
+                <h3><img src="https://www.kgdevelopment.pl{% static 'images/skills/' %}{{ skill.name | lower }}.png" alt="{{ skill.name }} Logo"><a> {{ skill.name }} </a></h3>
                 <p>{{ desc}}</p>
             </div>
         </div>
@@ -26,19 +26,19 @@
             <a href="#">@{{ skill.host.username }}</a>
             <div>
                 <div class="edit">
-                    <img src="{% static 'images/theme/edit.png' %}" />
-                    <a class="edit" href="#">Edit</a>
+                    <img src="https://www.kgdevelopment.pl{% static 'images/theme/edit.png' %}" />
+                    <a class="edit">Edit</a>
                 </div>
                 <div>
-                    <img src="{% static 'images/theme/delete.png' %}" />
-                    <a href="#">Delete</a>
+                    <img src="https://www.kgdevelopment.pl{% static 'images/theme/delete.png' %}" />
+                    <a>Delete</a>
                 </div>
             </div>
         </div>
         {% else %}
         
         <div class="no-admin-user">
-            <a href="#">@{{ skill.host.username }}</a>
+            <a>@{{ skill.host.username }}</a>
             <div class="stars-container">
                 <p class="active">&bull;</p>
                 <p class="active">&bull;</p>

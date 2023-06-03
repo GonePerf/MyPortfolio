@@ -11,17 +11,17 @@
         
         <li {% if request.path == lang %}class="active"{% endif %}>
             
-            <a class="text-link" href="{% url 'home' %}">{{ about }}</a>
+            <a class="text-link" href="https://www.kgdevelopment.pl{% url 'home' %}">{{ about }}</a>
             <a href="{% url 'home' %}"><div class="menu-item-about"></div></a>
         </li>
         <li {% if  'tools' in request.path %}class="active"{% endif %}>
             
-            <a class="text-link" href="{% url 'tools' %}">{{ tools }}</a>
+            <a class="text-link" href="https://www.kgdevelopment.pl{% url 'tools' %}">{{ tools }}</a>
             <a href="{% url 'tools' %}"><div class="menu-item-technologies"></div></a>
         </li>
         <li {% if 'projects' in request.path %}class="active"{% endif %}>
             
-            <a class="text-link" href="{% url 'projects' %}">{{ projects }}</a>
+            <a class="text-link" href="https://www.kgdevelopment.pl{% url 'projects' %}">{{ projects }}</a>
             <a href="{% url 'projects' %}"><div class="menu-item-projects"></div></a>
         </li>
         
