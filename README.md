@@ -1,35 +1,35 @@
-# Projekt Portfolio
+# Portfolio Project
 
-Projekt Portfolio jest moim osobistym portfolio, które prezentuje narzędzia wykorzystywane przeze mnie do pracy.
+The Portfolio Project is my personal portfolio that showcases the tools I use in my work.
 
-- Wersja angielska: [https://www.kgdevelopment.pl/en/](https://www.kgdevelopment.pl/en/)
-- Wersja polska: [https://www.kgdevelopment.pl/pl/](https://www.kgdevelopment.pl/pl/)
+- English version: [https://www.kgdevelopment.pl/en/](https://www.kgdevelopment.pl/en/)
+- Polish version: [https://www.kgdevelopment.pl/pl/](https://www.kgdevelopment.pl/pl/)
 
-## Opis
+## Description
 
-Projekt Portfolio jest napisany w Django i zawiera informacje o moich umiejętnościach, wykorzystywanych przeze mnie narzędziach oraz projektach, nad którymi pracowałem. Jest to miejsce, w którym mogę zaprezentować swoje osiągnięcia oraz udostępnić informacje kontaktowe.
+The Portfolio Project is written in Django and provides information about my skills, the tools I use, and the projects I have worked on. It serves as a platform where I can showcase my achievements and share contact information.
 
-## Narzędzia
+## Tools
 
-W projekcie mojego Portfolio wykorzystałem następujące narzędzia:
+In my Portfolio Project, I have utilized the following tools:
 
-- Django: Framework webowy napisany w języku Python.
-- HTML: Uruchamiający się na większości urządzeń interfejs jest zaprojektowany w jak najprostszy sposób.
-- SCSS: Preprocesor CSS pozwala na czytelne i intuicyjne stylowanie.
-- JavaScript: Skrypt zmieniający id głównego elementu od którego zależy kolorystyka strony.
-- SQLite: Plikowa baza danych.
-- Gunicorn: Serwer HTTP dla aplikacji Pythona.
-- Heroku: Platforma do wdrażania i hostowania aplikacji internetowych.
+- Django: A web framework written in Python.
+- HTML: The interface designed to run on various devices in the simplest way possible.
+- SCSS: A CSS preprocessor that allows for readable and intuitive styling.
+- JavaScript: A script that changes the ID of the main element, influencing the color scheme of the page.
+- SQLite: A file-based database.
+- Gunicorn: An HTTP server for Python applications.
+- Heroku: A platform for deploying and hosting web applications.
 
-## Uruchamianie projektu
+## Running the Project
 
-Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
+To run the project locally, follow these steps:
 
-1. Sklonuj repozytorium na swój lokalny komputer.
-2. Zainstaluj wymagane zależności, używając `pip install -r requirements.txt`.
-3. Skonfiguruj ustawienia bazy danych w pliku `settings.py`.
-4. Wykonaj migracje bazy danych: `python manage.py migrate`.
-5. Uruchom serwer deweloperski: `python manage.py runserver`.
-6. Otwórz przeglądarkę internetową i przejdź do `http://localhost:8000/`.
+1. Clone the repository to your local machine.
+2. Install the required dependencies using `pip install -r requirements.txt`.
+3. Configure the database settings in the `settings.py` file.
+4. Perform database migrations: `python manage.py migrate`.
+5. Start the development server: `python manage.py runserver`.
+6. Open a web browser and go to `http://localhost:8000/`.
 
-Dziękuję za zainteresowanie moim projektem Portfolio!
+Thank you for your interest in my Portfolio Project!
